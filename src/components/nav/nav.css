@@ -1,0 +1,22 @@
+.nav__container {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    color: #fff;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.nav__ul > ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav__ul > ul li {
+    width: 100px;
+}

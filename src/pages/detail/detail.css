@@ -1,0 +1,21 @@
+.detail__wrapper {
+    min-height: 20vh;
+    background-color: rgb(166, 165, 165);
+}
+
+.detail__show {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+   margin: 0 3rem;
+}
+
+.detail__slider {
+    max-width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .detail__show {
+        margin: 0 10px;
+    }
+}
