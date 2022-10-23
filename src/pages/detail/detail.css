@@ -14,6 +14,25 @@
     height: 100%;
 }
 
+.detail__count {
+    display: flex;
+}
+
+.detail__count > div {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail__count > div > span {
+    width: 25px;
+}
+
+.detail__cart {
+    display: flex;
+}
+
 @media screen and (max-width: 991px) {
     .detail__show {
         margin: 0 10px;

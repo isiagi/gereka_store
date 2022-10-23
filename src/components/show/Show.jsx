@@ -15,30 +15,35 @@ const items = [
     price: 200000,
     img: img1,
     name: "Bed",
+    qty: 1,
   },
   {
     id: 2,
     price: 200000,
     img: img2,
     name: "Bed",
+    qty: 1,
   },
   {
     id: 3,
     price: 200000,
     img: img3,
     name: "Bed",
+    qty: 1,
   },
   {
     id: 4,
     price: 200000,
     img: img4,
     name: "Bed",
+    qty: 1,
   },
   {
     id: 5,
     price: 200000,
     img: img5,
     name: "Bed",
+    qty: 1,
   },
 ];
 
@@ -46,8 +51,8 @@ const Show = () => {
   return (
     <div style={{display: 'flex',alignItems: 'center', justifyContent: 'center'}}>
       <div className="card">
-        {items.map(({ id, price, img, name }) => (
-          <Card id={id} price={price} name={name} img={img} />
+        {items.map(({ id, price, img, name, qty }) => (
+          <Card id={id} price={price} name={name} img={img} qty={qty} />
         ))}
       </div>
     </div>

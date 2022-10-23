@@ -4,11 +4,10 @@ import { Carousel } from "react-responsive-carousel";
 import img1 from "../../assets/images/1.png";
 import img2 from "../../assets/images/6.jpg";
 
-
- import "./slide.css"
+import "./slide.css";
 const thums = [img1, img2];
 
-const DetailSlider = () => {
+const DetailSlider = ({ show }) => {
   return (
     <Carousel
       showThumbs={true}
@@ -27,19 +26,26 @@ const DetailSlider = () => {
       }
       className="detail__slider"
     >
-      <div className="hero1__one">
-        
-      </div>
+      <div
+        style={{
+          height: "80vh",
+          background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${show})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          width: "100%",
+          backgroundPosition: "center",
+        }}
+      ></div>
 
-      <div className="hero__two">
+      {/* <div className="hero__two">
         <div className="hero__text">
           <h3>Furniture</h3>
           <h2>Superior Living</h2>
           <button className="hero__button">Make An Appointment</button>
         </div>
-      </div>
+      </div> */}
     </Carousel>
-  )
-}
+  );
+};
 
-export default DetailSlider
+export default DetailSlider;

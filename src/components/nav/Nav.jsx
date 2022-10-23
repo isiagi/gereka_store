@@ -1,8 +1,11 @@
-import React from "react";
+import { useContext } from "react";
+import { AppContext } from "../context/Context";
 
 import "./nav.css"
 
 function Nav() {
+  const { cart } = useContext(AppContext);
+  
   return (
     <div className="nav__container">
       <div className="nav__wrapper">
@@ -12,7 +15,7 @@ function Nav() {
         <div className="nav__ul">
           <ul>
             <li>Home</li>
-            <li>Cart</li>
+            <li>Cart {cart.length}</li>
             <li>Contact</li>
           </ul>
         </div>

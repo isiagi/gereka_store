@@ -1,12 +1,12 @@
-// import { useContext } from "react";
-// import { AppContext } from "../context/Context";
+import { useContext } from "react";
+import { AppContext } from "../context/Context";
 import "./card.css";
 
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Card = ({ id, price, img, name, qty }) => {
-//   const { addCart } = useContext(AppContext);
+    const { addCart } = useContext(AppContext);
 
   return (
     <>
@@ -15,6 +15,12 @@ const Card = ({ id, price, img, name, qty }) => {
           <div className="card__image">
             <div className="card__img__overlay" />
             <img src={img} alt="hey" width="100%" />
+            <div className="card__overlay">
+              <div className="card__text">
+                <span>View Detail</span>
+                <span>Add To Cart</span>
+              </div>
+            </div>
           </div>
         </Link>
         <div className="card__detail">
@@ -25,7 +31,7 @@ const Card = ({ id, price, img, name, qty }) => {
           <div className="card__detail2">
             <FaCartArrowDown
               className="card__icon"
-            //   onClick={() => addCart({ id, para: price, img, head: name, qty })}
+                onClick={() => addCart({ id, para: price, img, head: name, qty })}
             />
           </div>
         </div>
