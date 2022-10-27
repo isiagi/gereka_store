@@ -49,11 +49,21 @@ const items = [
 
 const Show = () => {
   return (
-    <div style={{display: 'flex',alignItems: 'center', justifyContent: 'center'}}>
-      <div className="card">
-        {items.map(({ id, price, img, name, qty }) => (
-          <Card id={id} price={price} name={name} img={img} qty={qty} />
-        ))}
+    <div>
+      <p style={{textAlign: "center"}}>BROWSE OUR ITEMS</p>
+      <h1 style={{textAlign: "center"}}>Ideal for your need</h1>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div className="card">
+          {items.map(({ id, price, img, name, qty }) => (
+            <Card id={id} price={price} name={name} img={img} qty={qty} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="hero__text">
           <h3>Furniture</h3>
           <h2>Better Interior</h2>
-          <button className="hero__button">Make An Appointment</button>
+          <button className="hero__button">Browse More</button>
         </div>
       </div>
 
@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="hero__text">
           <h3>Furniture</h3>
           <h2>Superior Living</h2>
-          <button className="hero__button">Make An Appointment</button>
+          <button className="hero__button">Browse More</button>
         </div>
       </div>
     </Carousel>

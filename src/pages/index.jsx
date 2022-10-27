@@ -3,6 +3,7 @@ import Nav from "../components/nav/Nav";
 import Detail from "./detail/Detail";
 import HomePage from "./HomePage";
 import { Context } from "../components/context/Context";
+import Footer from "../components/footer/Footer";
 
 const index = () => {
   return (
@@ -14,6 +15,7 @@ const index = () => {
           <Route path="/:id" element={<Detail />} />
         </Routes>
       </Context>
+      <Footer />
     </Router>
   );
 };
