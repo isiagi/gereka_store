@@ -44,7 +44,7 @@ const Detail = () => {
           </p>
           <div className="detail__cart">
             <div className="detail__count">
-              <div>{cart[0].qty}</div>
+              <div>{cart.length === 0 ? item.qty : cart[0].qty}</div>
               <div>
                 <span onClick={() => onIncrease(item)}>+</span>
                 <span onClick={() => onDecrease(item)}>-</span>
