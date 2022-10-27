@@ -1,10 +1,10 @@
 .banner__wrapper {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
-    margin-block: 72px;
+    margin: 72px;
 }
 
 .banner__item {

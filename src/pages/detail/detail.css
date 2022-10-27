@@ -1,12 +1,13 @@
 .detail__wrapper {
     min-height: 20vh;
-    background-color: rgb(166, 165, 165);
+    background-color: rgba(108, 107, 107, 0.5);
 }
 
 .detail__show {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
-   margin: 0 3rem;
+   margin: 1rem 3rem;
+   gap: 20px;
 }
 
 .detail__slider {
@@ -31,6 +32,30 @@
 
 .detail__cart {
     display: flex;
+}
+
+.detail__info > h2 {
+    margin-bottom: 1.5rem;
+}
+
+.detail__info > p {
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.detail__info__head {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 20px;
+}
+
+.detail__info__info {
+    min-height: 20vh;
+}
+
+.detail__info__info > p {
+    line-height: 2rem;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 991px) {

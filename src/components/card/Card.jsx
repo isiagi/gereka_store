@@ -3,38 +3,45 @@ import { AppContext } from "../context/Context";
 import "./card.css";
 
 import { FaCartArrowDown } from "react-icons/fa";
+import { GrView } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 const Card = ({ id, price, img, name, qty }) => {
-    const { addCart } = useContext(AppContext);
+  const { addCart } = useContext(AppContext);
 
   return (
     <>
       <div className="card__Container" key={id}>
-        <Link to={`/${id}`}>
-          <div className="card__image">
-            <div className="card__img__overlay" />
-            <img src={img} alt="hey" width="100%" />
-            <div className="card__overlay">
-              <div className="card__text">
-                <span>View Detail</span>
-                <span>Add To Cart</span>
-              </div>
+        <div className="card__image">
+          <div className="card__img__overlay" />
+          <img src={img} alt="hey" width="100%" />
+          <div className="card__overlay">
+            <div className="card__text">
+              <span>
+                <Link to={`/${id}`}>
+                  <GrView className="card__icon"/>
+                </Link>
+              </span>
+              <span onClick={() => addCart({ id, para: price, img, head: name, qty })}>
+                <FaCartArrowDown className="card__icon"/>
+              </span>
             </div>
           </div>
-        </Link>
-        <div className="card__detail">
-          <div className="card__detail1">
-            <p>{name}</p>
-            <p>Ugx {price}</p>
-          </div>
-          <div className="card__detail2">
+        </div>
+        <Link to={`/${id}`}>
+          <div className="card__detail">
+            <div className="card__detail1">
+              <p>{name}</p>
+              <p>Ugx {price}</p>
+            </div>
+            {/* <div className="card__detail2">
             <FaCartArrowDown
               className="card__icon"
                 onClick={() => addCart({ id, para: price, img, head: name, qty })}
             />
+          </div> */}
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* id: 1, img: "/static/media/shoe.9484e62d3cda2b2a0e01.jpeg", head: "Nike Air", para: "70000" */}
