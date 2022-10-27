@@ -72,7 +72,7 @@ const Footer = () => {
           <div>
             <ul>
               <li>
-                <CgHeadset style={{ color: "#fffe00", fontSize: "1.5rem" }} />{" "}
+                <CgHeadset style={{ color: "#31312f", fontSize: "1.5rem" }} />{" "}
                 +256 754 562712 / +256 754 562712
               </li>
               <li>
@@ -85,7 +85,7 @@ const Footer = () => {
                 >
                   <div>
                     <HiOutlineMail
-                      style={{ color: "#fffe00", fontSize: "1.5rem" }}
+                      style={{ color: "#31312f", fontSize: "1.5rem" }}
                     />
                   </div>
                   <div>
@@ -103,7 +103,7 @@ const Footer = () => {
                 >
                   <div>
                     <GoLocation
-                      style={{ color: "#fffe00", fontSize: "1.5rem" }}
+                      style={{ color: "#31312f", fontSize: "1.5rem" }}
                     />
                   </div>
                   <div>

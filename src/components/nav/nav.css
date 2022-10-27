@@ -5,6 +5,22 @@
     color: #fff;
 }
 
+.nav__container1 {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    color: #31312f;
+    background-color: #EFEFEF;
+}
+
+.nav__icons {
+    display: none;
+}
+
+.nav__icon {
+    font-size: 1.5rem;
+}
+
 .nav__wrapper {
     display: flex;
     justify-content: space-between;
@@ -20,3 +36,28 @@
 .nav__ul > ul li {
     width: 100px;
 }
+
+@media screen and (max-width: 991px) {
+    .nav__icons {
+      display: block;
+    }
+  
+    .nav__ul {
+      position: absolute;
+      top: calc(100% + 0vh);
+      left: -100%;
+      background-color: rgb(138, 135, 135);
+      width: 100%;
+      z-index: 100;
+    }
+  
+    .nav__ul.active {
+      left: 0;
+    }
+  
+    .nav__ul ul {
+      display: flex;
+      list-style-type: none;
+      flex-direction: column;
+    }
+  }
