@@ -20,7 +20,7 @@ function Nav() {
   }, []);
 
   return (
-    <div className={offSet > 40 ? "nav__container1" : "nav__container"}>
+    <div className={offSet > 20 ? "nav__container1" : "nav__container"}>
       <div className="nav__wrapper">
         <div className="nav__head">
           <Link to="/">

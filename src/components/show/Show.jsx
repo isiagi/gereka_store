@@ -47,11 +47,11 @@ const items = [
   },
 ];
 
-const Show = () => {
+const Show = ({heading}) => {
   return (
     <div>
       <p style={{textAlign: "center"}}>BROWSE OUR ITEMS</p>
-      <h1 style={{textAlign: "center"}}>Ideal for your need</h1>
+      <h1 style={{textAlign: "center"}}>{heading}</h1>
       <div
         style={{
           display: "flex",
