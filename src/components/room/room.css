@@ -1,0 +1,19 @@
+.room__container {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/1.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.room__wrapper {
+    max-width: 700px;
+    font-size: 1.2em;
+    /* color: #fff; */
+    line-height: 3rem;
+}
+
+.room__wrapper h2, h3 {
+    font-weight: 500;
+}
