@@ -4,6 +4,7 @@ import Detail from "./detail/Detail";
 import HomePage from "./HomePage";
 import { Context } from "../components/context/Context";
 import Footer from "../components/footer/Footer";
+import Cart from "./cart/Cart";
 
 const index = () => {
   return (
@@ -13,6 +14,7 @@ const index = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/:id" element={<Detail />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </Context>
       <Footer />

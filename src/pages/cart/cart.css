@@ -1,0 +1,16 @@
+.cart__wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cart__section2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.cart__section2 > img {
+  height: 15rem;
+  object-fit: contain;
+}

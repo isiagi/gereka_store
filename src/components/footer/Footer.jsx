@@ -25,19 +25,19 @@ const Footer = () => {
           </div>
           <div>
             <h3>Follow Us</h3>
-            <BsFacebook style={{ fontSize: "2rem", color: "#31312f" }} />
+            <BsFacebook style={{ fontSize: "1.5rem", color: "#8e8c8c" }} />
             <BsInstagram
               style={{
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 marginLeft: "1rem",
-                color: "#31312f",
+                color: "#8e8c8c",
               }}
             />
             <AiFillTwitterCircle
               style={{
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 marginLeft: "1rem",
-                color: "#31312f",
+                color: "#8e8c8c",
               }}
             />
           </div>
@@ -72,7 +72,7 @@ const Footer = () => {
           <div>
             <ul>
               <li>
-                <CgHeadset style={{ color: "#31312f", fontSize: "1.5rem" }} />{" "}
+                <CgHeadset style={{ color: "#8e8c8c", fontSize: "1.5rem" }} />{" "}
                 +256 754 562712 / +256 754 562712
               </li>
               <li>
@@ -85,7 +85,7 @@ const Footer = () => {
                 >
                   <div>
                     <HiOutlineMail
-                      style={{ color: "#31312f", fontSize: "1.5rem" }}
+                      style={{ color: "#8e8c8c", fontSize: "1.5rem" }}
                     />
                   </div>
                   <div>
@@ -103,7 +103,7 @@ const Footer = () => {
                 >
                   <div>
                     <GoLocation
-                      style={{ color: "#31312f", fontSize: "1.5rem" }}
+                      style={{ color: "#8e8c8c", fontSize: "1.5rem" }}
                     />
                   </div>
                   <div>

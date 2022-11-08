@@ -36,7 +36,9 @@ const Detail = () => {
         </div>
         <div className="detail__info">
           <h1>{item.name}</h1>
-          <h2>shs {item.price}</h2>
+          <h2>
+            <em>shs {item.price}</em>
+          </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque
@@ -51,6 +53,14 @@ const Detail = () => {
               </div>
             </div>
             <button onClick={() => addCart(item)}>Add To Cart</button>
+          </div>
+          <div style={{ margin: "2rem 0" }}>
+            <p>
+              Category: <span style={{ color: "#8e8c8c" }}>Furniture</span>
+            </p>
+            <p>
+              Tags: <span style={{ color: "#8e8c8c" }}>Interior</span>
+            </p>
           </div>
         </div>
       </div>

@@ -6,14 +6,14 @@
     margin: 0 auto;
     align-items: center;
     line-height: 2.3rem;
-    /* background-color: #270da7; */
+    background-color: #F4F2F2;
     color: #31312f;
 }
 
 .footer__info {
     max-width: 400px;
     margin-bottom: 1rem;
-    color: #31312f;
+    color: #8e8c8c;
 }
 
 .footer__contain {
@@ -22,6 +22,7 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 13px;
+    padding: 0px 10px;
 }
 
 .lastFooter__wrapper {
@@ -36,8 +37,24 @@
     gap: 1rem;
 }
 
+.footer__wrapper > div > h3 {
+    font-weight: 450;
+}
+
+.footer__links > div > h3 {
+    font-weight: 450;
+}
+
+.footer__wrapper > div > h3 {
+    font-weight: 450;
+}
+
+.footer__wrapper > div > h3 {
+    font-weight: 450;
+}
+
 .footer__links div > ul li {
-    color: #31312f;
+    color: #8e8c8c;
     /* margin-block: 1rem; */
 }
 

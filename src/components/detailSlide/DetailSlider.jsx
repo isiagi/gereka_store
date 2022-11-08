@@ -26,7 +26,7 @@ const DetailSlider = ({ show }) => {
       }
       className="detail__slider"
     >
-      <div
+      {/* <div
         style={{
           height: "80vh",
           background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${show})`,
@@ -35,7 +35,10 @@ const DetailSlider = ({ show }) => {
           width: "100%",
           backgroundPosition: "center",
         }}
-      ></div>
+      ></div> */}
+
+      <img className="img-slider" src={show} alt='pic' />
+      <img src={show} alt='pic' />
 
       {/* <div className="hero__two">
         <div className="hero__text">
