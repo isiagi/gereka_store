@@ -19,7 +19,7 @@ const Card = ({ id, price, img, name, qty }) => {
             <div className="card__text">
               <span>
                 <Link to={`/${id}`}>
-                  <GrView className="card__icon"/>
+                  Preview
                 </Link>
               </span>
               <span onClick={() => addCart({ id, para: price, img, head: name, qty })}>
@@ -34,12 +34,9 @@ const Card = ({ id, price, img, name, qty }) => {
               <p>{name}</p>
               <p>Ugx {price}</p>
             </div>
-            {/* <div className="card__detail2">
-            <FaCartArrowDown
-              className="card__icon"
-                onClick={() => addCart({ id, para: price, img, head: name, qty })}
-            />
-          </div> */}
+            <div style={{paddingBottom: '10px'}}>
+              <p>Tag: Interior</p>
+            </div>
           </div>
         </Link>
       </div>

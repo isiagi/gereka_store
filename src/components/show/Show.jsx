@@ -51,7 +51,7 @@ const Show = ({heading}) => {
   return (
     <div>
       <p style={{textAlign: "center"}}>BROWSE OUR ITEMS</p>
-      <h1 style={{textAlign: "center"}}>{heading}</h1>
+      <h1 style={{textAlign: "center",fontWeight: 400}}>{heading}</h1>
       <div
         style={{
           display: "flex",

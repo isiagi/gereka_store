@@ -1,0 +1,25 @@
+.sid__container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(142, 141, 141);
+    padding: 32px 40px;
+    margin-block: 32px;
+    flex-wrap: wrap;
+}
+
+.sid__wrapper {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    gap: 10px;
+}
+
+.sid__icon {
+    font-size: 2rem;
+    font-weight: lighter;
+    -webkit-text-stroke: 2px white;
+}
+
+.sid__wrapper h2 {
+    font-weight: 300;
+}

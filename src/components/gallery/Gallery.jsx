@@ -6,6 +6,7 @@ import i2 from "../../assets/images/7.jpg";
 import i3 from "../../assets/images/8.jpg";
 import i4 from "../../assets/images/9.jpg";
 import i5 from "../../assets/images/10.jpg";
+import i6 from "../../assets/images/11.jpg";
 
 const images = [i1, i2, i3, i4, i5];
 
@@ -17,7 +18,7 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 4,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -31,16 +32,28 @@ const responsive = {
 
 function Gallery() {
   return (
-    <div style={{ dispaly: "flex", justifyContent: "center", width: "100%" }}>
+    <div style={{ dispaly: "flex", justifyContent: "center",flexDirection: "column", width: "100%" }}>
+    <h1 style={{textAlign: "center", fontWeight: 200, padding:'20px 0'}}>Our Gallery</h1>
       <div>
         <Carousel responsive={responsive}>
-          <img src={i1} alt="" height="300px" width="100%" />
+          <div style={{ marginRight: "1rem" }}>
+            <img src={i1} alt="" height="250px" width="100%" />
+          </div>
+          <div style={{ marginRight: "1rem" }}>
+            <img src={i2} alt="" height="250px" width="100%" />
+          </div>
 
-          <img src={i2} alt="" height="300px" width="100%"/>
+          <div style={{ marginRight: "1rem" }}>
+            <img src={i3} alt="" height="250px" width="100%" />
+          </div>
 
-          <img src={i3} alt="" height="300px" width="100%"/>
+          <div style={{ marginRight: "1rem" }}>
+            <img src={i4} alt="" height="250px" width="100%" />
+          </div>
 
-          <img src={i3} alt="" height="300px" width="100%"/>
+          <div>
+            <img src={i6} alt="" height="250px" width="100%" />
+          </div>
         </Carousel>
       </div>
     </div>
