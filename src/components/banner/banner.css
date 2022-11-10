@@ -1,6 +1,6 @@
 .banner__wrapper {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
@@ -16,6 +16,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    height: 200px;
+    color: #fff;
+}
+
+.banner__item1 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: #fff;
+}
+
+.banner__item2 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../assets/images/13.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
     color: #fff;
 }

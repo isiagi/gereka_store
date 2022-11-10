@@ -6,11 +6,12 @@ export const AppContext = createContext();
 export const Context = (props) => {
   const [cart, setCart] = useLocalStorageState("cartItems", []);
 
-  const addCart = (parcel) => {
+  const addCart = (parcel, count) => {
+    console.log(parcel);
     const exist = cart.find((item) => item.id === parcel.id);
     if (!exist) {
-      setCart([...cart, { ...parcel }]);
-      alert(`${parcel.head} added to cart`);
+      setCart([...cart, { ...parcel, qty: count ? count : parcel.qty }]);
+      alert(`${parcel.name} added to cart`);
     } else {
       alert("Item Already In Cart");
     }
@@ -53,7 +54,7 @@ export const Context = (props) => {
     }
   };
 
-  const itemPrice = cart && cart.reduce((a, c) => a + c.qty * c.para, 0);
+  const itemPrice = cart && cart.reduce((a, c) => a + c.qty * c.price, 0);
   const delieveryPrice = "3000";
   // eslint-disable-next-line
   const totalPrice =

@@ -3,7 +3,6 @@ import { AppContext } from "../../components/context/Context";
 
 import { MdDelete } from "react-icons/md";
 
-
 import "./cart.css";
 import Sid from "../../components/sid/Sid";
 
@@ -33,14 +32,13 @@ const Cart = () => {
               <div style={{ width: "100%" }}>
                 <div className="cat__section3">
                   <span>
-                    <h3>{item.head}</h3>
+                    <h3>{item.name}</h3>
                   </span>
-                 
-                  <span className="cat__px">Shs {item.para * item.qty}</span>
+
+                  <span className="cat__px">Shs {item.price * item.qty}</span>
                 </div>
 
                 <div className="cat__select">
-                
                   <div className="cat__buttons">
                     <button
                       className="cat__pa"
@@ -58,7 +56,8 @@ const Cart = () => {
                   </div>
                 </div>
                 <span className="cat__del" onClick={() => onRemove(item)}>
-                  <MdDelete />delete
+                  <MdDelete />
+                  delete
                 </span>
               </div>
             </div>
@@ -94,6 +93,5 @@ const Cart = () => {
     </div>
   );
 };
-
 
 export default Cart;

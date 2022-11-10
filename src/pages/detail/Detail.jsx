@@ -10,6 +10,7 @@ import "./detail.css";
 
 const Detail = () => {
   const [item, setItem] = useState({});
+  const [count, setCount] = useState(1);
   const [tab, setTab] = useState("desc");
   const { cart, addCart, onIncrease, onDecrease } = useContext(AppContext);
 
@@ -46,13 +47,13 @@ const Detail = () => {
           </p>
           <div className="detail__cart">
             <div className="detail__count">
-              <div>{cart.length === 0 ? item.qty : cart[0].qty}</div>
+              <div>{cart.length === 0 ? item.qty : count}</div>
               <div>
-                <span onClick={() => onIncrease(item)}>+</span>
-                <span onClick={() => onDecrease(item)}>-</span>
+                <span onClick={() => setCount(prev => prev + 1)}>+</span>
+                <span onClick={() => setCount(prev => prev === 1 ? prev : prev - 1)}>-</span>
               </div>
             </div>
-            <button onClick={() => addCart(item)}>Add To Cart</button>
+            <button onClick={() => addCart(item, count)}>Add To Cart</button>
           </div>
           <div style={{ margin: "2rem 0" }}>
             <p>

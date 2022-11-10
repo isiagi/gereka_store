@@ -22,7 +22,7 @@ const Card = ({ id, price, img, name, qty }) => {
                   Preview
                 </Link>
               </span>
-              <span onClick={() => addCart({ id, para: price, img, head: name, qty })}>
+              <span onClick={() => addCart({ id, price, img, name, qty })}>
                 <FaCartArrowDown className="card__icon"/>
               </span>
             </div>
