@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import useLocalStorageState from '../hooks/useLocalStorage'
+import useLocalStorageState from "../hooks/useLocalStorage";
 
 export const AppContext = createContext();
 
@@ -41,6 +41,8 @@ export const Context = (props) => {
 
   const onRemove = (parcel) => {
     if (window.confirm("Are you sure you want to remove this item")) {
+      // console.log(parcel);
+      // console.log(cart);
       setCart(cart.filter((item) => item.id !== parcel.id));
     }
   };
@@ -51,11 +53,27 @@ export const Context = (props) => {
     }
   };
 
+  const itemPrice = cart && cart.reduce((a, c) => a + c.qty * c.para, 0);
+  const delieveryPrice = "3000";
+  // eslint-disable-next-line
+  const totalPrice =
+    parseInt(itemPrice) + (itemPrice && parseInt(delieveryPrice));
+
   return (
     <AppContext.Provider
-      value={{ cart, onRemove, addCart, onIncrease, onDecrease, onClear }}
+      value={{
+        cart,
+        onRemove,
+        addCart,
+        onIncrease,
+        onDecrease,
+        onClear,
+        itemPrice,
+        delieveryPrice,
+        totalPrice,
+      }}
     >
       {props.children}
     </AppContext.Provider>
-  )
+  );
 };
