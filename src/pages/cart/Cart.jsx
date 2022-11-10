@@ -35,7 +35,7 @@ const Cart = () => {
                     <h3>{item.name}</h3>
                   </span>
 
-                  <span className="cat__px">Shs {item.price * item.qty}</span>
+                  {/* <span className="cat__px">Shs {item.price * item.qty}</span> */}
                 </div>
 
                 <div className="cat__select">
@@ -64,7 +64,7 @@ const Cart = () => {
           ))}
         </div>
         <div>
-          <div className="cat__wrapper9">
+          {/* <div className="cat__wrapper9">
             <h2>Order Summary</h2>
             <div
               style={{
@@ -86,6 +86,40 @@ const Cart = () => {
                 <p>Shs {itemPrice && totalPrice}</p>
               </div>
             </div>
+          </div> */}
+
+          <div className="cat__wrapper9">
+            <h2>Choosen Items</h2>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                flexDirection: "column",
+              }}
+            >
+              {cart.map((item) => (
+                <div
+                  style={{ display: "flex", justifyContent: "space-around" }}
+                >
+                  <p>Item</p>
+                  <p>{item.name}</p>
+                </div>
+              ))}
+            </div>
+            <span
+              style={{
+                textAlign: "center",
+                padding: "8px 16px",
+                background: "#877139",
+                color: "white",
+                cursor: "pointer"
+              }}
+              onClick={() => {
+                alert("Order Taken");
+              }}
+            >
+              Place Order
+            </span>
           </div>
         </div>
       </div>

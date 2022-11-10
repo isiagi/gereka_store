@@ -73,7 +73,7 @@ const Footer = () => {
             <ul>
               <li>
                 <CgHeadset style={{ color: "#8e8c8c", fontSize: "1.5rem" }} />{" "}
-                +256 754 562712 / +256 754 562712
+                0758356777 / 0758356777
               </li>
               <li>
                 <div

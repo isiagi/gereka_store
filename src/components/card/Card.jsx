@@ -32,7 +32,7 @@ const Card = ({ id, price, img, name, qty }) => {
           <div className="card__detail">
             <div className="card__detail1">
               <p>{name}</p>
-              <p>Ugx {price}</p>
+              {/* <p>Ugx {price}</p> */}
             </div>
             <div style={{paddingBottom: '10px'}}>
               <p>Tag: Interior</p>

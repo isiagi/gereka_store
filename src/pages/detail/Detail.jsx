@@ -38,7 +38,7 @@ const Detail = () => {
         <div className="detail__info">
           <h1>{item.name}</h1>
           <h2>
-            <em>shs {item.price}</em>
+            {/* <em>shs {item.price}</em> */}
           </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
